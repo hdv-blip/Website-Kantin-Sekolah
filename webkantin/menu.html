@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pageMenu">
+      <header>
+        <div class="logo">
+          <h1><b>KantinKu</b></h1>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="#punyaabout">About</a>
+          <a href="#punyamedia">Media</a>
+          <a href="#punyamenu">Menu</a>
+        </nav>
+      </header>
+
+      <section id="punyamenu">
+        <div class="judul1">
+          <h1>
+            <b>Selamat datang!<br />berikut menu yang kami sediakan.</b>
+          </h1>
+          <div class="hola1">
+            <p>
+              Jelajahi menu favorit mu hanya disini! pesanan menjadi lebih mudah
+              dan praktis.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="daftarMenu">
+          <div class="Katalog">
+            <div class="mnu">
+              <img class="img" src="../webkantin/gambar/nasgor.jpg" alt="" width="300px" />
+              <p class="kat1">Makanan</p>
+              <p class="ket"><b>Nasi goreng</b></p>
+              <p class="ket"><b>Rp15.000</b></p>
+              <button class="btn1" onclick="buatpesanan('Nasi goreng', 15000)">
+                Beli sekarang +
+              </button>
+            </div>
+
+            <div class="mnu">
+              <img class="img" src="../webkantin/gambar/migor.webp" alt="" width="300px" />
+              <p class="kat1">Makanan</p>
+              <p class="ket"><b>Mie goreng</b></p>
+              <p class="ket"><b>Rp15.000</b></p>
+              <button class="btn1" onclick="buatpesanan('Mie goreng', 15000)">
+                Beli sekarang +
+              </button>
+            </div>
+
+            <div class="mnu">
+              <img class="img" src="../webkantin/gambar/snackplat.png" alt="" width="300px" />
+              <p class="kat1">Makanan</p>
+              <p class="ket"><b>Snack Platter</b></p>
+              <p class="ket"><b>Rp20.000</b></p>
+              <button
+                class="btn1"
+                onclick="buatpesanan('Snack Platter', 20000)"
+              >
+                Beli sekarang +
+              </button>
+            </div>
+
+            <div class="mnu">
+              <img class="img" src="../webkantin/gambar/airmineral.png" alt="" width="300px" />
+              <p class="kat2">Minuman</p>
+              <p class="ket"><b>Air mineral</b></p>
+              <p class="ket"><b>Rp5.000</b></p>
+              <button class="btn1" onclick="buatpesanan('Air mineral', 5000)">
+                Beli sekarang +
+              </button>
+            </div>
+
+            <div class="mnu">
+              <img class="img" src="../webkantin/gambar/eteh.png" alt="" width="300px" />
+              <p class="kat2">Minuman</p>
+              <p class="ket"><b>Es teh manis</b></p>
+              <p class="ket"><b>Rp7.000</b></p>
+              <button class="btn1" onclick="buatpesanan('Es teh manis', 7000)">
+                Beli sekarang +
+              </button>
+            </div>
+
+            <div class="mnu">
+              <img class="img" src="../webkantin/gambar/pisreng.png" alt="" width="300px" />
+              <p class="kat1">Makanan</p>
+              <p class="ket"><b>Pisang goreng renyah</b></p>
+              <p class="ket"><b>Rp5.000</b></p>
+              <button
+                class="btn1"
+                onclick="buatpesanan('Pisang goreng renyah', 5000)"
+              >
+                Beli sekarang +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="buatpesanan" id="panelTransaksi">
+          <h2><b>Buat pesanan mu!</b></h2>
+          <p>Pesanan mu akan di buat dengan cepat, dan praktis.</p>
+          <div id="item"></div>
+          <div id="total">
+            <p><b>Total pesanan :</b></p>
+          </div>
+          <button class="btn-bayar" type="button" onclick="bayarSekarang()">
+            Bayar sekarang
+          </button>
+        </div>
+      </section>
+
+      <section id="punyaabout">
+        <div class="tentangpm">
+          <div class="judulabout">
+            <h1><b>Tentang KantinKu</b></h1>
+          </div>
+          <div class="gambarkantin">
+            <img src="../webkantin/gambar/kantin1.png" alt="Ilustrasi KantinKu" />
+          </div>
+          <div class="isiabout">
+            <p>
+              <span style="font-weight: 700; color: green"
+                >KantinKu</span
+              >
+              adalah kantin sekolah yang menyediakan berbagai pilihan makanan
+              dan minuman untuk menemani waktu istirahat para siswa. Kami
+              menyediakan menu yang beragam dengan harga yang terjangkau,
+              sehingga siswa dapat memilih makanan sesuai dengan selera dan
+              kebutuhan mereka. KantinKu bukan hanya tempat untuk membeli dan
+              menikmati makanan, tetapi juga menjadi tempat bagi siswa untuk
+              berkumpul bersama teman-teman. Di sini, siswa dapat mengobrol,
+              bercanda, berbagi cerita, dan menikmati waktu istirahat dengan
+              suasana yang nyaman dan menyenangkan. Melalui website ini, siswa
+              dapat melihat daftar menu, harga, serta informasi mengenai makanan
+              dan minuman yang tersedia tanpa harus datang langsung ke kantin.
+              Dengan begitu, proses memilih dan memesan makanan menjadi lebih
+              mudah dan praktis. Kami berharap KantinKu dapat menjadi salah
+              satu tempat favorit siswa untuk menikmati makanan sekaligus
+              menciptakan momen menyenangkan bersama teman-teman di sekolah.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="punyamedia">
+        <div class="media">Media KantinKu</div>
+        <div class="btn-about">
+          <button class="con-btn">
+            <i class="fa-brands fa-github"></i>
+          </button>
+          <button class="con-btn">
+            <i class="fa-brands fa-square-instagram"></i>
+          </button>
+          <button class="con-btn">
+            <i class="fa-brands fa-tiktok"></i>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

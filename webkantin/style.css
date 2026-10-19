@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+body {
+    margin: 0;
+    padding-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f8f3;
+    color: #263d2e;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 16px 6%;
+    background-color: #246344;
+    box-shadow: 0 4px 16px rgba(25, 66, 44, 0.12);
+}
+
+.logo {
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.nav a {
+    padding: 6px 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #d9efb9;
+    border-bottom-color: #d9efb9;
+}
+
+.home-hero {
+    width: min(1200px, 88%);
+    min-height: calc(100vh - 100px);
+    margin: 0 auto;
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.judul1 {
+    margin: 0;
+    color: #246344;
+}
+
+.judul1 h1 {
+    margin: 0 0 20px;
+    font-size: clamp(30px, 4vw, 52px);
+    line-height: 1.3;
+}
+
+.home-text p {
+    max-width: 480px;
+    margin: 0 0 28px;
+    color: #5a6f60;
+}
+
+.menu {
+    display: inline-block;
+    padding: 12px 26px;
+    border: 2px solid #246344;
+    border-radius: 30px;
+    background-color: #246344;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.menu:hover {
+    background-color: #184b32;
+    transform: translateY(-3px);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.hero1 {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    object-fit: contain;
+}
+
+.pageMenu {
+    width: 100%;
+}
+
+#punyamenu,
+#punyaabout,
+#punyamedia {
+    scroll-margin-top: 20px;
+}
+
+#punyamenu {
+    width: min(1200px, 88%);
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#punyamenu .judul1 {
+    max-width: 850px;
+}
+
+#punyamenu .judul1 h1 {
+    font-size: clamp(28px, 3.5vw, 42px);
+}
+
+.hola1 {
+    color: #5a6f60;
+    font-size: 16px;
+}
+
+.hola1 p {
+    margin: 0;
+}
+
+.judul2 {
+    margin-bottom: 20px;
+    color: #246344;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.judul2 p {
+    margin: 0;
+}
+
+.Katalog {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.mnu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 18px;
+    border: 1px solid #dfE9dd;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 18px rgba(30, 74, 45, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mnu:hover {
+    transform: scale(1.10)  ;
+    box-shadow: 0 12px 24px rgba(30, 74, 45, 0.12);
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.kat1,
+.kat2 {
+    display: inline-block;
+    margin: 16px 0 10px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.kat1 {
+    background-color: #e5f1db;
+    color: #385d24;
+    border: 1px solid #cbdFba;
+}
+
+.kat2 {
+    background-color: #e0f2ec;
+    color: #226650;
+    border: 1px solid #bedfd1;
+}
+
+.ket {
+    margin: 4px 0;
+    color: #263d2e;
+    font-size: 16px;
+}
+
+.btn1 {
+    width: 100%;
+    margin-top: auto;
+    padding: 10px 16px;
+    border: 2px solid #246344;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #246344;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.mnu .ket:last-of-type {
+    margin-bottom: 20px;
+}
+
+.btn1:hover {
+    background-color: #246344;
+    color: #ffffff;
+}
+
+.buatpesanan {
+    margin-top: 35px;
+    padding: 28px;
+    border: 1px solid #cddfc7;
+    border-radius: 20px;
+    background-color: #edf4e7;
+}
+
+.btn-bayar {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px 16px;
+    border: 2px solid #246344;
+    border-radius: 12px;
+    background-color: #246344;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-bayar:hover {
+    background-color: #184b32;
+}
+
+.buatpesanan h2 {
+    margin: 0 0 8px;
+    color: #246344;
+}
+
+.buatpesanan > p {
+    margin: 0 0 20px;
+    color: #5a6f60;
+}
+
+#item {
+    display: grid;
+    gap: 12px;
+}
+
+.item-pesanan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 14px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.item-pesanan p {
+    margin: 0;
+}
+
+.item-pesanan small {
+    color: #5a6f60;
+}
+
+.hapus-item {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    border: 1px solid #b8cdbb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #246344;
+}
+
+.hapus-item:hover {
+    background-color: #edf4e7;
+}
+
+#total {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #cddfc7;
+    color: #246344;
+    font-size: 20px;
+}
+
+#total p {
+    margin: 0;
+}
+
+#punyaabout {
+    padding: 60px 6%;
+    background-color: #e9f1e4;
+}
+
+.tentangpm {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    gap: 30px 45px;
+}
+
+.judulabout {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #246344;
+}
+
+.judulabout h1 {
+    margin: 0 0 12px;
+    font-size: clamp(26px, 3vw, 36px);
+}
+
+.gambarkantin img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.isiabout {
+    color: #425b49;
+    font-size: 15px;
+}
+
+.isiabout p {
+    margin: 0 0 16px;
+}
+
+.brand-highlight {
+    color: #246344;
+    font-weight: 700;
+}
+
+#punyamedia {
+    padding: 45px 6%;
+    text-align: center;
+    background-color: #246344;
+}
+
+.media {
+    margin-bottom: 18px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.btn-about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.con-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid #dceaca;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #246344;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.con-btn:hover {
+    background-color: #dceaca;
+    transform: translateY(-3px);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #86ae58;
+    outline-offset: 4px;
+}
+
+@media (max-width: 1000px) {
+    .nav {
+        gap: 20px;
+    }
+
+    .Katalog {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-hero {
+        gap: 25px;
+    }
+
+    .tentangpm {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        padding-top: 130px;
+    }
+
+    html {
+        scroll-padding-top: 145px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px 5%;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 22px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .home-hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding: 35px 0 50px;
+        text-align: center;
+    }
+
+    .home-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero1 {
+        max-width: 420px;
+    }
+
+    #punyamenu {
+        padding-top: 30px;
+    }
+
+    .tentangpm {
+        grid-template-columns: 1fr;
+    }
+
+    .gambarkantin img {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .buatpesanan {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Katalog {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+
+    .judul1 h1 {
+        font-size: 30px;
+    }
+
+    .img {
+        height: 210px;
+    }
+
+    .item-pesanan {
+        flex-wrap: wrap;
+    }
+
+    .btn-about {
+        gap: 10px;
+    }
+
+    .con-btn {
+        padding: 9px 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
